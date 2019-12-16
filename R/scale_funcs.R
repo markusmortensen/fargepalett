@@ -23,7 +23,7 @@ scale_color_pwc <- function(palette = "main", discrete = TRUE, reverse = FALSE, 
 #' @param reverse Logisk variabel som indikerer om paletten skal reverseres eller ikke.
 #' @param ... Flere argumenter som sendes til hhv discrete_scale og scale_fill_gradientn for diskret TRUE/FALSE
 #'
-scale_fill_pal <- function(palette = "pwc_palette", discrete = TRUE, reverse = FALSE, ...) {
+scale_fill_pwc <- function(palette = "pwc_palette", discrete = TRUE, reverse = FALSE, ...) {
   pal <- pwc_pal(palette = palette, rev = reverse)
 
   if (discrete) {

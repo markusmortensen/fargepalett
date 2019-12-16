@@ -1,3 +1,5 @@
+## code to prepare `pwc_colors` dataset goes here
+
 # PwC colors
 pwc_colors <- c(
   orange = "#D04A02",
@@ -80,3 +82,4 @@ pwc_colors <- c(
 )
 
 
+usethis::use_data(pwc_colors)

@@ -1,0 +1,23 @@
+---
+title: "add_palettes"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{add_palettes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Hvordan legge til flere paletter?
+
+Fargepaletten til PwC er vel og bra, men veldig ofte lager vi figurer for kunde som må følge deres fargekoder. Hex-koder er noe styr å jobbe med, så denne vignetten viser hvordan man kan legge til fargene til klienter i denne pakken. På sikt bør vi ha samlet fargepalettene til mange av våre kunder i denne pakken, slik at det er enkelt å lage flotte figurer i riktige farger. 
+
+```{r setup}
+library(pwccolorrr)
+```
