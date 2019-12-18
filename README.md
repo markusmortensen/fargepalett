@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# pwccolorrr
+# fargepalett
 
 <!-- badges: start -->
 
@@ -19,7 +19,7 @@ tilstrekkelig.
 Fargekodene og de foreslåtte palettene er hentet fra presentasjonen
 “PwCs farger og fargesammensetting”.
 
-## Installation
+## Installering
 
 I første omgang vil pakken være tilgjengelig på et åpent repo, men på
 sikt må det vurderes om pakken må flyttes til et pwc-repo.

@@ -98,7 +98,7 @@ I tillegg står følgende punkter på todo-listen. Her setter jeg stor pris på 
 
 
 ### PwC standard palette
-```{r}
+```{r, fig.height = 1}
 standard <- pwc_pal("pwc_palette", for_print = TRUE)
 standard
 ```
@@ -106,92 +106,92 @@ standard
 
   
 ### PwC nøytral palette
-```{r}
+```{r, fig.height = 1}
 neutral <- pwc_pal("pwc_neutral_palette", for_print = TRUE)
 neutral
 ```
 
 ### PwC Status palette
-```{r}
+```{r, fig.height = 1}
 status <- pwc_pal("status_palette", for_print = TRUE)
 status
 ```
 
 ### Foreslåtte paletter
 
-```{r}
+```{r, fig.height = 1}
 pal1 <- pwc_pal("pal1", for_print = TRUE)
 pal1
 ```
 
-```{r}
+```{r, fig.height = 1}
 pal2 <- pwc_pal("pal2", for_print = TRUE)
 pal2
 ```
 
-```{r}
+```{r, fig.height = 1}
 pal3 <- pwc_pal("pal3", for_print = TRUE)
 pal3
 ```
 
-```{r}
+```{r, fig.height = 1}
 pal4 <- pwc_pal("pal4", for_print = TRUE)
 pal4
 ```
 
-```{r}
+```{r, fig.height = 1}
 pal5 <- pwc_pal("pal5", for_print = TRUE)
 pal5
 ```
 
-```{r}
+```{r, fig.height = 1}
 pal6 <- pwc_pal("pal6", for_print = TRUE)
 pal6
 ```
 
-```{r}
+```{r, fig.height = 1}
 pal7 <- pwc_pal("pal7", for_print = TRUE)
 pal7
 ```
 
-```{r}
+```{r, fig.height = 1}
 pal8 <- pwc_pal("pal8", for_print = TRUE)
 pal8
 ```
 
 ### Paletter i samme farge
 
-```{r}
+```{r, fig.height = 1}
 orange <- pwc_pal("orange_palette", for_print = TRUE)
 orange
 ```
 
-```{r}
+```{r, fig.height = 1}
 # tangerine <- pwc_pal("tangerine_palette", for_print = TRUE)
 # tangerine
 ```
 
-```{r}
+```{r, fig.height = 1}
 yellow <- pwc_pal("yellow_palette", for_print = TRUE)
 yellow
 ```
 
-```{r}
+```{r, fig.height = 1}
 rose <- pwc_pal("rose_palette", for_print = TRUE)
 rose
 ```
 
-```{r}
+```{r, fig.height = 1}
 purple <- pwc_pal("purple_palette", for_print = TRUE)
 purple
 ```
 
-```{r}
+```{r, fig.height = 1}
 blue <- pwc_pal("blue_palette", for_print = TRUE)
 blue
 ```
 
-```{r}
+```{r, fig.height = 1}
 green <- pwc_pal("green_palette", for_print = TRUE)
 green
 ```
