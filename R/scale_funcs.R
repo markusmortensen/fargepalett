@@ -5,12 +5,12 @@
 #' @param reverse Logisk variabel som indikerer om paletten skal reverseres eller ikke.
 #' @param ... Flere argumenter som sendes til hhv discrete_scale og scale_fill_gradientn for diskret TRUE/FALSE
 #'
-#'
-scale_color_pwc <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
-  pal <- pwc_pal(palette = palette, reverse = reverse)
+#' @export
+scale_color_pwc <- function(palette = "pwc_palette", discrete = TRUE, reverse = FALSE, ...) {
+  pal <- pwc_pal(palette = palette, rev = reverse)
 
   if (discrete) {
-    ggplot2::discrete_scale("colour", paste0("drsimonj_", palette), palette = pal, ...)
+    ggplot2::discrete_scale("colour", paste0("pwc: ", palette), palette = pal, ...)
   } else {
     ggplot2::scale_color_gradientn(colours = pal(256), ...)
   }
@@ -23,6 +23,7 @@ scale_color_pwc <- function(palette = "main", discrete = TRUE, reverse = FALSE, 
 #' @param reverse Logisk variabel som indikerer om paletten skal reverseres eller ikke.
 #' @param ... Flere argumenter som sendes til hhv discrete_scale og scale_fill_gradientn for diskret TRUE/FALSE
 #'
+#' @export
 scale_fill_pwc <- function(palette = "pwc_palette", discrete = TRUE, reverse = FALSE, ...) {
   pal <- pwc_pal(palette = palette, rev = reverse)
 

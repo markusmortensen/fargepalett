@@ -1,13 +1,13 @@
 Package: fargepalett
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     person(given = "Markus",
            family = "Mortensen",
            role = c("aut", "cre"),
            email = "markusmortens1@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: PwCs fargepaletter for bruk i figurer. 
+Description: PwCs fargepaletter for bruk i visualiseringer.
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
@@ -18,3 +18,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+RoxygenNote: 6.1.1

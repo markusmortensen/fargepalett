@@ -29,7 +29,7 @@ pwc_colors <- c(
   # tangerine
   tangerine1 = "#714300",
   tangerine2 = "#AE6800",
-  tangerine3 = "EB8C00",
+  tangerine3 = "#EB8C00",
   tangerine4 = "#FFA929",
   tangerine5 = "#FFDCA9",
 
@@ -82,4 +82,4 @@ pwc_colors <- c(
 )
 
 
-usethis::use_data(pwc_colors)
+usethis::use_data(pwc_colors, overwrite = TRUE)
