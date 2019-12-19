@@ -21,7 +21,7 @@ library(fargepalett)
 
 <!-- badges: end -->
 
-Målet med denne pakken er å gjøre det enkelt å bruke PwC sin fargepalett i visualiseringer laget med ggplot eller andre figurer. Hovedfunksjonene i pakken er "scale_fill_pwc" og "scale_color_pwc" som brukes for å bestemme fargepaletten som brukes i hhv fill- og color-dimensjonen i "aesthetic". Både hex-kodene til fargene som lagt inn og alle foreslåtte paletter ligger vedlagt som data-sett i pakken slik at en kan bruke fargene i situasjoner hvor hovedfunksjonene ikke er tilstrekkelig. 
+Målet med denne pakken er å gjøre det enkelt å bruke PwC sin fargepalett i visualiseringer laget med ggplot eller andre figurer. Hovedfunksjonene i pakken er "scale_fill_pwc" og "scale_color_pwc" som brukes for å bestemme fargepaletten som brukes i hhv fill- og color-dimensjonen i "aesthetic". Både hex-kodene til fargene som lagt inn og alle foreslåtte paletter ligger vedlagt som data-sett i pakken slik at en kan bruke fargene i situasjoner hvor hovedfunksjonene ikke er tilstrekkelig. (Per nå må dette akksesseres ved hhv fargepalett:::pwc_colors og fargepalett:::pwc_palettes)
 
 Fargekodene og de foreslåtte palettene er hentet fra presentasjonen "PwCs farger og fargesammensetting". 
 
@@ -40,7 +40,6 @@ remotes::install_github("markusmortensen/fargepalett")
 Under følger noen enkle eksempler på hvordan pakken kan brukes for å bruke PwC-fargene i figurer. 
 
 ```{r example, message = FALSE}
-# library(fargepalett)
 library(ggridges)
 theme_set(theme_bw())
 ```

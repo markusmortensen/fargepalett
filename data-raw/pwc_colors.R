@@ -82,4 +82,4 @@ pwc_colors <- c(
 )
 
 
-usethis::use_data(pwc_colors, overwrite = TRUE)
+usethis::use_data(pwc_colors, overwrite = TRUE, internal = TRUE)

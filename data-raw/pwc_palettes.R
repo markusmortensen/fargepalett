@@ -27,4 +27,4 @@ pwc_palettes <- list(
 
 
 
-usethis::use_data(pwc_palettes)
+usethis::use_data(pwc_palettes, overwrite = TRUE, internal = TRUE)
