@@ -11,7 +11,7 @@ pwc_pal(palette = "pwc_palette", rev = FALSE, for_print = FALSE, ...)
 
 \item{rev}{Logisk variabel som indikerer om paletten skal reverseres eller ikke}
 
-\item{...Ytterlige}{variabler som sendes til colorRampPalette()}
+\item{...}{Ytterlige variabler som sendes til colorRampPalette()}
 }
 \value{
 Objekt med en palett

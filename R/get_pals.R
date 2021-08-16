@@ -4,7 +4,7 @@
 #'
 #' @param palette Navn på palette fra listen pwc_pal
 #' @param rev Logisk variabel som indikerer om paletten skal reverseres eller ikke
-#' @param ...Ytterlige variabler som sendes til colorRampPalette()
+#' @param ... Ytterlige variabler som sendes til colorRampPalette()
 #'
 #' @return Objekt med en palett
 #' @importFrom grDevices colorRampPalette

@@ -1,6 +1,7 @@
 #' Funksjon for å hente hex-kode til farger
 #'
 #' @param ... Navn på farger i listen pwc_colors
+#' @export
 #'
 pwc_cols <- function(...) {
   cols <- c(...)

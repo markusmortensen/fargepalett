@@ -3,6 +3,7 @@
 pwc_palettes <- list(
   pwc_palette = pwc_cols("orange", "rose", "red", "tangerine", "yellow"),
   pwc_neutral_palette = pwc_cols("black", "dark_grey", "medium_grey", "grey", "light_grey", "white"),
+  pwc_mix_palette = pwc_cols("orange", "red", "tangerine", "dark_grey", "light_grey"),
 
   orange_palette = pwc_cols("orange1", "orange2", "orange3", "orange4", "orange5"),
   tangerine_palette = pwc_cols("tangerine1", "tangerine2", "tangerine3", "tangerine4", "tangerine5"),
@@ -27,4 +28,4 @@ pwc_palettes <- list(
 
 
 
-usethis::use_data(pwc_palettes, overwrite = TRUE, internal = TRUE)
+usethis::use_data(pwc_palettes, overwrite = TRUE, internal = FALSE)
