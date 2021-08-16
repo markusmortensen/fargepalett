@@ -4,8 +4,7 @@
 \alias{scale_fill_pwc}
 \title{Scale-funksjon for pwc-farger}
 \usage{
-scale_fill_pwc(palette = "pwc_palette", discrete = TRUE,
-  reverse = FALSE, ...)
+scale_fill_pwc(palette = "pwc_palette", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Navn på palett fra listen pwc_pal}
