@@ -25,7 +25,7 @@ scale_color_pwc <- function(palette = "pwc_palette", discrete = TRUE, reverse = 
 #'
 #' @examples
 scale_color_pwc_d <- function(palette = "pwc_palette", reverse = FALSE, ...) {
-  pal <- pwc_pal(palette = palette, rev = reverse, discrete = TRUE)
+  pal <- pwc_pal(palette = palette, rev = reverse)
   ggplot2::discrete_scale("colour", paste0("pwc: ", palette), palette = pal, ...)
 }
 
@@ -69,7 +69,7 @@ scale_fill_pwc <- function(palette = "pwc_palette", discrete = TRUE, reverse = F
 #'
 #' @examples
 scale_fill_pwc_d <- function(palette = "pwc_palette", reverse = FALSE, ...) {
-  pal <- pwc_pal(palette = palette, rev = reverse, discrete = TRUE)
+  pal <- pwc_pal(palette = palette, rev = reverse)
   ggplot2::discrete_scale("fill", paste0("pwc: ", palette), palette = pal, ...)
 }
 
