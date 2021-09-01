@@ -66,15 +66,19 @@ tibble(date = seq(as.Date("2021-01-01"), length.out = 365, by = "day"),
 ```
 
 ```{r}
-mpg %>% ggplot(aes(x = displ, fill = class)) +
+mpg %>%
+  filter(manufacturer %in% c("audi", "chevrolet", "dodge", "ford", "honda", "hyundai", "jeep", 
+"land rover", "lincoln")) %>% 
+  ggplot(aes(x = displ, fill = as.factor(manufacturer))) +
   geom_bar(color = "white", size = 0.25) +
-  scale_fill_pwc_d(palette = "pwc_palette2_expanded") +
+  scale_fill_pwc_d(palette = "pwc_palette2_expanded", reverse = F) +
   theme(
     legend.position = "bottom",
     legend.margin = margin(t = -0.5, unit = "cm")
   ) + 
   scale_y_continuous(expand = expansion()) +
   labs(y = "Number of cars", title = "Engine displacement in liters by class of car", x = "", fill = "")
+
 ```
 
 

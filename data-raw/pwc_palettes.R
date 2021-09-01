@@ -6,7 +6,7 @@ pwc_palettes <- list(
   pwc_palette2 = pwc_cols("orange", "yellow", "rose", "tangerine", "red"),
   # pwc_palette rearranged and expanded for discrete use:
   pwc_palette2_expanded = pwc_cols("orange", "orange1", "yellow", "medium_grey", "tangerine2", "rose",
-                                   "yellow1", "tangerine", "light_grey", "red"),
+                                   "tangerine", "rose2", "grey", "red"),
   pwc_neutral_palette = pwc_cols("black", "dark_grey", "medium_grey", "grey", "light_grey", "white"),
   pwc_mix_palette = pwc_cols("orange", "red", "tangerine", "dark_grey", "light_grey"),
 

@@ -8,14 +8,15 @@
 #'
 #' @return Objekt med en palett
 #' @importFrom grDevices colorRampPalette
-pwc_pal <- function(palette = "pwc_palette", rev = FALSE, for_print = FALSE, ...) {
+pwc_pal <- function(palette = "pwc_palette", rev = FALSE, for_print = FALSE, discrete = TRUE,...) {
   pal <- pwc_palettes[[palette]]
 
   n <- length(pal)
 
+
   if (rev) pal <- rev(pal)
 
-  out <- grDevices::colorRampPalette(pal, ...)
+  out <- colorRampPalette(pal,...)
 
   if (for_print) {
     structure(out(n), class = "palette", name = palette)
