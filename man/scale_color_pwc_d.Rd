@@ -4,7 +4,7 @@
 \alias{scale_color_pwc_d}
 \title{scale_color_pwc_d}
 \usage{
-scale_color_pwc_d(palette = "pwc_palette", reverse = FALSE, ...)
+scale_color_pwc_d(palette = "pwc_palette2_expanded", reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Navn på palett fra listen pwc_pal}

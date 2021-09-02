@@ -1,4 +1,4 @@
-#' Color ramp palette
+#' Scale color - internal function
 #'
 #' This function uses the selected palette if length(pal) < n, where n is
 #' the number of groups in fill/color used in scale_*_pwc_d/c
@@ -13,9 +13,9 @@
 #' @param ... other arguments sent to grDevices::colorRamp()
 #'
 #' @return a color palette compatible with ggplot
-#' @export
+#' @importFrom grDevices colorRamp
 
-colorRampPalette <- function(colors,...)
+scale_color_internal <- function(colors,...)
 {
   ramp <- grDevices::colorRamp(colors,...)
     function(n) {

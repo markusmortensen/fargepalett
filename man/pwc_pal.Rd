@@ -4,13 +4,7 @@
 \alias{pwc_pal}
 \title{Fargepaletter for pwc}
 \usage{
-pwc_pal(
-  palette = "pwc_palette",
-  rev = FALSE,
-  for_print = FALSE,
-  discrete = TRUE,
-  ...
-)
+pwc_pal(palette = "pwc_palette", rev = FALSE, for_print = FALSE, ...)
 }
 \arguments{
 \item{palette}{Navn på palette fra listen pwc_pal}
