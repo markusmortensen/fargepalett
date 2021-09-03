@@ -102,7 +102,17 @@ standard <- pwc_pal("pwc_palette", for_print = TRUE)
 standard
 ```
 
+### PwC standard palette reordered
+```{r, fig.height = 1}
+standard_reorder <- pwc_pal("pwc_palette2", for_print = TRUE)
+standard_reorder
+```
 
+### PwC standard palette reordered og utvidet
+```{r, fig.height = 1}
+standard_reorder_exp <- pwc_pal("pwc_palette2_expanded", for_print = TRUE)
+standard_reorder_exp
+```
   
 ### PwC nøytral palette
 ```{r, fig.height = 1}
@@ -194,5 +204,43 @@ blue
 green <- pwc_pal("green_palette", for_print = TRUE)
 green
 ```
+
+## Logikk for valg av farger i palette
+Det er lagt inn logikk, slik at dersom color/fill inneholder flere kategorier enn farger i paletten, så konstrueres det farger basert på gitt palette. Som retningslinje, bør man alltid benytte en palette med nok farger for å få frem alle gruppene, men dersom det ikke går, vil denne logikken sikre at det er mulig å produsere plott med ulike farger
+
+#### Eksempel hvor farger skaleres
+
+I dette tilfellet bør man velge en skala med store forskjeller mellom fargene, ettersom skaleringsfunksjonen lager en farge ca. midt mellom fargene til høyre og venstre
+
+```{r, fig.height = 3}
+mpg %>%
+  ggplot(aes(x = displ, fill = as.factor(manufacturer))) +
+  geom_bar(color = "white", size = 0.25) +
+  scale_fill_pwc_d(palette = "pwc_palette2_expanded", reverse = F) +
+  theme(
+    legend.position = "bottom",
+    legend.margin = margin(t = -0.5, unit = "cm")
+  ) + 
+  scale_y_continuous(expand = expansion()) +
+  labs(y = "Number of cars", title = "Engine displacement in liters by class of car", x = "", fill = "")
+```
+#### Eksempel hvor farger ikke skaleres
+
+```{r, fig.height = 3}
+mpg %>%
+  filter(manufacturer %in% c("audi", "chevrolet", "dodge", "ford", "honda", "hyundai", "jeep",
+"land rover", "lincoln")) %>%
+  ggplot(aes(x = displ, fill = as.factor(manufacturer))) +
+  geom_bar(color = "white", size = 0.25) +
+  scale_fill_pwc_d(palette = "pwc_palette2_expanded", reverse = F) +
+  theme(
+    legend.position = "bottom",
+    legend.margin = margin(t = -0.5, unit = "cm")
+  ) + 
+  scale_y_continuous(expand = expansion()) +
+  labs(y = "Number of cars", title = "Engine displacement in liters by class of car", x = "", fill = "")
+```
+
+
 
 

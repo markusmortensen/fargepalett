@@ -1,6 +1,6 @@
 Package: fargepalett
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: 
     person(given = "Markus",
            family = "Mortensen",
@@ -18,6 +18,6 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)

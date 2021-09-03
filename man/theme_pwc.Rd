@@ -4,7 +4,7 @@
 \alias{theme_pwc}
 \title{Theme PwC}
 \usage{
-theme_pwc(base_size = 2.5, font_fam = "Arial")
+theme_pwc(base_size = 1, font_fam = "Arial")
 }
 \arguments{
 \item{font_fam}{Skrifttype, f.eks. Georgia eller Arial.}
