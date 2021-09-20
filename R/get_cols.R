@@ -9,6 +9,11 @@ pwc_cols <- function(...) {
   if (is.null(cols))
     return (pwc_colors)
 
+  if(!is.null(cols))
+    assertthat::assert_that(cols %in% names(pwc_colors),
+                            msg = "Color not found in collection of PwC colors")
+
+
   pwc_colors[cols]
 }
 

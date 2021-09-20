@@ -10,6 +10,10 @@
 #' @importFrom grDevices colorRampPalette
 #' @export
 pwc_pal <- function(palette = "pwc_palette", rev = FALSE, for_print = FALSE,...) {
+
+  assertthat::assert_that(palette %in% names(pwc_palettes),
+                          msg = "Palette not found in collection of PwC palettes")
+
   pal <- pwc_palettes[[palette]]
 
   n <- length(pal)
