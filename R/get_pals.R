@@ -11,8 +11,12 @@
 #' @export
 pwc_pal <- function(palette = "pwc_palette", rev = FALSE, for_print = FALSE,...) {
 
-  assertthat::assert_that(palette %in% names(pwc_palettes),
-                          msg = "Palette not found in collection of PwC palettes")
+  if(!(palette %in% names(pwc_palettes)))
+    warning(paste0("Palette: [",
+                   palette,
+                   "] is not found in collection of PwC palettes. Using palette = pwc_palette"))
+    palette = "pwc_palette"
+
 
   pal <- pwc_palettes[[palette]]
 
